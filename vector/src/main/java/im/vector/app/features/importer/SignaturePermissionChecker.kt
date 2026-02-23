@@ -37,13 +37,9 @@ class SignaturePermissionChecker {
     private fun isSignatureAllowed(packageName: String, pm: PackageManager): Boolean {
         try {
             val fingerprints = getSignatureFingerprints(pm, packageName)
-            if (fingerprints.any { fingerprint ->
-                        Timber.d("isSignatureAllowed: checking fingerprint $fingerprint")
-                        fingerprint == BuildConfig.ELEMENT_X_FINGERPRINT
-                    }
-            ) {
-                return true
-            }
+            // The fingerprint list must exactly match the expected one
+            Timber.d("isSignatureAllowed: checking fingerprints $fingerprints")
+            return fingerprints == listOf(BuildConfig.ELEMENT_X_FINGERPRINT)
         } catch (e: Exception) {
             Timber.w(e, "signature check failed for $packageName")
         }
