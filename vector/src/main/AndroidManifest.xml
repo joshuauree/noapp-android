@@ -418,7 +418,6 @@
         <service
             android:name=".features.importer.ImporterService"
             android:exported="true"
-            android:process=":remote"
             tools:ignore="ExportedService" />
 
         <!-- Receivers -->

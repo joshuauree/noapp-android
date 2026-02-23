@@ -7,7 +7,6 @@
 
 package im.vector.app.features.importer
 
-import android.app.Service
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -18,11 +17,12 @@ import android.os.Messenger
 import android.os.RemoteException
 import dagger.hilt.android.AndroidEntryPoint
 import im.vector.app.core.di.ActiveSessionHolder
+import im.vector.app.core.services.VectorAndroidService
 import timber.log.Timber
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ImporterService : Service() {
+class ImporterService : VectorAndroidService() {
     private companion object {
         /**
          * Command to the service to get the data.
@@ -99,7 +99,7 @@ class ImporterService : Service() {
      * When binding to the service, we return an interface to our messenger
      * for sending messages to the service.
      */
-    override fun onBind(intent: Intent): IBinder? {
+    override fun onBind(intent: Intent?): IBinder? {
         Timber.w("ImporterService: onBind")
         val messenger = Messenger(IncomingHandler())
         return messenger.binder
