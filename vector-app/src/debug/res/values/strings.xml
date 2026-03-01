@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="debug_rationale">Rationale!</string>
-    <string name="app_name">NoApp (Debug)</string>
+    <string name="app_name">NoApp</string>
     <string name="ftue_auth_sign_in_choose_server_header">Privé communiceren, zonder concessies</string>
 </resources>
