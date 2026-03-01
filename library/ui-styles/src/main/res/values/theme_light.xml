@@ -171,7 +171,12 @@
         <item name="vctr_rich_text_editor_menu_button_background">@color/vctr_rich_text_editor_menu_button_background_light</item>
     </style>
 
-    <style name="Theme.Vector.Light" parent="Base.Theme.Vector.Light" />
+    <style name="Theme.Vector.Light" parent="Base.Theme.Vector.Light">
 
+        <item name="colorPrimary">#1F2A6D</item>
+        <item name="colorSecondary">#5A2D8A</item>
+        <item name="colorTertiary">#6B4EFF</item>
+
+    </style>
 </resources>
 

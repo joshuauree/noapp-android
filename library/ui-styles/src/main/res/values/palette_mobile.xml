@@ -4,14 +4,14 @@
     <!-- Alias to the palette colors
       Source: https://www.figma.com/file/X4XTH9iS2KGJ2wFKDqkyed/Compound?node-id=1521%3A23026 -->
 
-    <color name="element_accent_light">@color/palette_element_green</color>
-    <color name="element_accent_dark">@color/palette_element_green</color>
+    <color name="element_accent_light">@color/palette_prune</color>
+    <color name="element_accent_dark">@color/palette_prune</color>
 
     <color name="element_alert_light">@color/palette_vermilion</color>
     <color name="element_alert_dark">@color/palette_vermilion</color>
 
-    <color name="element_link_light">@color/palette_links</color>
-    <color name="element_link_dark">@color/palette_links</color>
+    <color name="element_link_light">@color/palette_prune</color>
+    <color name="element_link_dark">@color/palette_prune</color>
 
     <!-- attr for content colors -->
     <attr name="vctr_content_primary" format="color" />
