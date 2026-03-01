@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="matrix_org_server_url" translatable="false">
+        https://noapp.nl
+    </string>
+    <string name="room_directory_search_hint">Name or ID (#example:noapp.nl)</string>
+</resources>
